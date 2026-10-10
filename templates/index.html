@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Structure Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <p class="tag">WEB TECHNOLOGY PROJECT</p>
+
+        <h1>URL Structure <span>Analyzer</span></h1>
+
+        <p class="subtitle">
+            Enter any HTTP or HTTPS URL to explore its components.
+        </p>
+
+        <!-- URL Analyzer Form -->
+        <form id="url-form">
+            <label for="url-input">Enter URL</label>
+
+            <div class="input-row">
+                <input
+                    id="url-input"
+                    type="text"
+                    placeholder="https://www.example.com/page?id=10#details"
+                    required
+                >
+                <button type="submit">Analyze URL</button>
+            </div>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <!-- Analysis Results -->
+        <section id="results" hidden>
+            <div class="results-heading">
+                <h2>Analysis Results</h2>
+                <button type="button" id="copy-results">
+                    Copy Results
+                </button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- College URL Creation Activity -->
+        <section class="college-section">
+            <p class="tag">PRACTICAL ACTIVITY</p>
+
+            <h2>Create Your Own College URLs</h2>
+
+            <p class="college-description">
+                Create and explore five meaningful URLs for a
+                hypothetical college website. Click "Use URL" to
+                analyze the URL and identify its components.
+            </p>
+
+            <div class="college-url-list">
+
+                <!-- 1. Home Page -->
+                <article class="college-url-card">
+                    <div class="college-url-info">
+                        <span class="url-number">01</span>
+                        <h3>Home Page</h3>
+                        <p>
+                            The main page of the college website.
+                        </p>
+                        <code>https://www.mycollege.edu/</code>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="college-url-btn"
+                        data-url="https://www.mycollege.edu/"
+                    >
+                        Use URL
+                    </button>
+                </article>
+
+                <!-- 2. Student Login -->
+                <article class="college-url-card">
+                    <div class="college-url-info">
+                        <span class="url-number">02</span>
+                        <h3>Student Login</h3>
+                        <p>
+                            A page for students to access their accounts.
+                        </p>
+                        <code>https://www.mycollege.edu/students/login</code>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="college-url-btn"
+                        data-url="https://www.mycollege.edu/students/login"
+                    >
+                        Use URL
+                    </button>
+                </article>
+
+                <!-- 3. Faculty Page -->
+                <article class="college-url-card">
+                    <div class="college-url-info">
+                        <span class="url-number">03</span>
+                        <h3>Faculty Page</h3>
+                        <p>
+                            Information about college faculty and staff.
+                        </p>
+                        <code>https://www.mycollege.edu/faculty</code>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="college-url-btn"
+                        data-url="https://www.mycollege.edu/faculty"
+                    >
+                        Use URL
+                    </button>
+                </article>
+
+                <!-- 4. Course Information -->
+                <article class="college-url-card">
+                    <div class="college-url-info">
+                        <span class="url-number">04</span>
+                        <h3>Course Information</h3>
+                        <p>
+                            Details about the Computer Science course.
+                        </p>
+                        <code>https://www.mycollege.edu/courses/computer-science</code>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="college-url-btn"
+                        data-url="https://www.mycollege.edu/courses/computer-science"
+                    >
+                        Use URL
+                    </button>
+                </article>
+
+                <!-- 5. Examination Results -->
+                <article class="college-url-card">
+                    <div class="college-url-info">
+                        <span class="url-number">05</span>
+                        <h3>Examination Results</h3>
+                        <p>
+                            Examination results for the year 2026.
+                        </p>
+                        <code>https://www.mycollege.edu/results?year=2026</code>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="college-url-btn"
+                        data-url="https://www.mycollege.edu/results?year=2026"
+                    >
+                        Use URL
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <p class="footer">
+            URL Structure Analyzer · Python &amp; Flask
+        </p>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
